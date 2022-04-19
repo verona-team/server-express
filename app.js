@@ -28,3 +28,11 @@ app.get('/products', (req, res) => {
 app.delete('/products/:id', (req, res) => {
   res.status(200).json({ message: 'Product has been deleted'})
 })
+
+app.put('/products/:id', (req, res) => {
+  let product = {
+    id: 1,
+    name: 'Shoes'
+  }
+  res.status(200).json(product)
+})
