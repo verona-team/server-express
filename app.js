@@ -24,3 +24,11 @@ app.get('/products', (req, res) => {
   ]
   res.status(200).json(product)
 })
+
+app.put('/products/:id', (req, res) => {
+  let product = {
+    id: 1,
+    name: 'Shoes'
+  }
+  res.status(200).json(product)
+})
