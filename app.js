@@ -24,3 +24,7 @@ app.get('/products', (req, res) => {
   ]
   res.status(200).json(product)
 })
+
+app.delete('/products/:id', (req, res) => {
+  res.status(200).json({ message: 'Product has been deleted'})
+})
