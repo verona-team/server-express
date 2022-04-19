@@ -10,3 +10,17 @@ app.post('/gsignin', (req, res) => {
   let token = 'dw0ady9aydh79aw8dg7a8wgdaw'
   res.status(200).json({ access_token: token })
 })
+
+app.get('/products', (req, res) => {
+  let product = [
+    {
+      id: 1,
+      name: 'Shoes'
+    },
+    {
+      id: 2,
+      name: 'Shirt'
+    }
+  ]
+  res.status(200).json(product)
+})
